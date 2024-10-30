@@ -1,0 +1,87 @@
+body {
+  background-color: #010409;
+}
+
+.container {
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+  
+textarea {
+    width: 95%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color: #0d1117;
+    color: yellow;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+    
+  }
+  
+.buttons {
+    color: rgb(0, 0, 0);
+  }
+  
+.output textarea {
+    background-color: #0d1117;
+    color: red;
+    font-size: 15px;
+    font-weight: 800;
+    
+  }
+
+button{
+    font-size: 18px; /* Aumenta el tamaño del texto dentro del botón */
+    padding: 10px 20px; /* Añade relleno para hacer que el botón sea más grande */
+    width: 200px; /* Establece un ancho fijo */
+    background-color: #007bff;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: #007bff;
+    color: white;
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    margin-right: 10px;
+}
+
+/*El hover es para que cuando le pasemos el cursor encima
+al boton cambie de color*/
+button:hover{
+  background-color: #0056b3;
+}
+
+input{
+
+  font-size: 20px;
+  width: 170px;
+  padding: 10px 20px;
+  
+}
+
+
+textarea{
+
+  border: 2px solid #ccc
+
+}
+
+h2{
+
+  font-size: 40px;
+  color: white;
+}
+
+h3{
+
+  font-size: 30px;
+  color: white;
+}
+
+.boton-login{
+  justify-content: flex-start;
+  margin-left: 670px;
+  margin-bottom: 10px; 
+}

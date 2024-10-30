@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <h1>Visualizador del Sistema de Archivos</h1>
+    <div class="menu-disco">
+        <h2>Seleccione un Disco</h2>
+        <ul>
+            <li *ngFor="let disco of discos" (click)="irAParticiones(disco)">
+                {{ disco }}
+            </li>
+        </ul>
+        <button class="btn-regresar" (click)="regresar_consola()" >Regresar a la Consola</button>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <form (ngSubmit)="login()">
+            <div class="input-group">
+                <label for="ID_particion">ID Partición</label>
+                <textarea id="ID_particion" [(ngModel)]="ID_particion" name="ID_particion" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="nombre_usuario">Usuario</label>
+                <textarea id="nombre_usuario" [(ngModel)]="nombre_usuario" name="nombre_usuario" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <textarea id="password" [(ngModel)]="password" name="password" required></textarea>
+            </div>
+
+            <button type="submit">Ingresar</button>
+
+            <button type="button" (click)="goToConsolaPrincipal()">Regresar a la Consola Principal</button>
+        </form>
+
+        <div *ngIf="MensajeLogin" class="error-message">
+            {{ MensajeLogin }}
+        </div>
+
+
+    </div>
+</body>
+
+</html>

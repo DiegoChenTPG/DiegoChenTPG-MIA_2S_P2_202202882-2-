@@ -1,0 +1,79 @@
+/* Estilo del cuerpo */
+body {
+    background-color: #010409;
+    color: white;
+}
+button{
+    font-weight: bold;
+}
+/* Contenedor principal */
+.container {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Menú de selección de disco */
+.menu-disco {
+    background-color: #0d1117;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-disco h2 {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Lista de discos */
+.menu-disco ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-disco li {
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/* Efecto hover para cada disco */
+.menu-disco li:hover {
+    background-color: #0056b3;
+}
+
+.btn-regresar {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-regresar:hover {
+    background-color: #0056b3;
+}

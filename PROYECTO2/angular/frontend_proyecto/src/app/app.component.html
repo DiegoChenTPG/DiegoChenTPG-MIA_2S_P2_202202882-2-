@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <ng-container *ngIf="router.url === '/'">
+        <div class="container">
+            <h2>Sistema de Archivos</h2>
+
+            <button class="boton-login" routerLink="/login">Ir a Login</button>
+            <textarea [(ngModel)]="commandInput" placeholder="Escribe tus comandos aquí..."></textarea>
+
+            <br>
+
+            <div class="buttons">
+                <button (click)="clearCommand()">Limpiar</button>
+                <button (click)="executeCommand()">Ejecutar Comando</button>
+                <input type="file" accept=".smia" (change)="loadFile($event)" />
+            </div>
+
+            <div class="output">
+                <h3>Salida:</h3>
+                <textarea readonly [value]="commandOutput"></textarea>
+            </div>
+        </div>
+    </ng-container>
+    <router-outlet></router-outlet> <!-- Este es el contenedor para las rutas -->
+</body>
+
+</html>

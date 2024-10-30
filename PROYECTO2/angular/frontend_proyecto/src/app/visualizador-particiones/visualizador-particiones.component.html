@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    <h1>Visualizador del Sistema de Archivos</h1>
+    <!-- visualizador_particiones.component.html -->
+    <div class="container">
+        <h2>Particiones del Disco: {{ disco }}</h2>
+        <ul>
+            <li *ngFor="let particion of particiones">{{ particion }}</li>
+        </ul>
+        <button class="btn-regresar" (click)="regresar_discos()" >Regresar a la Consola</button>
+    </div>
+</body>
+
+</html>

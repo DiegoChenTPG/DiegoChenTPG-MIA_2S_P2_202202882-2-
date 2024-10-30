@@ -1,0 +1,41 @@
+digraph G {
+        node [shape=plaintext]
+        tabla [label=<
+            <table border="0" cellborder="1" cellspacing="0">
+                <tr><td colspan="2" bgcolor="purple"> REPORTE MBR </td></tr>
+                <tr><td>mbr_tamano</td><td>5242880</td></tr>
+                <tr><td bgcolor = "#E0B0FF">mrb_fecha_creacion</td><td bgcolor = "#E0B0FF">2024-09-06 19:33:52 -0600 CST</td></tr>
+                <tr><td>mbr_disk_signature</td><td>1037551952</td></tr>
+            
+				<tr><td colspan="2" bgcolor = "purple"> PARTICIÓN 1 </td></tr>
+				<tr><td>part_status</td><td>0</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_type</td><td bgcolor = "#E0B0FF">P</td></tr>
+				<tr><td>part_fit</td><td>B</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_start</td><td bgcolor = "#E0B0FF">153</td></tr>
+				<tr><td>part_size</td><td>1048576</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_name</td><td bgcolor = "#E0B0FF">Particion1</td></tr>
+			
+				<tr><td colspan="2" bgcolor = "purple"> PARTICIÓN 2 </td></tr>
+				<tr><td>part_status</td><td>0</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_type</td><td bgcolor = "#E0B0FF">P</td></tr>
+				<tr><td>part_fit</td><td>W</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_start</td><td bgcolor = "#E0B0FF">1048729</td></tr>
+				<tr><td>part_size</td><td>2097152</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_name</td><td bgcolor = "#E0B0FF">Particion2</td></tr>
+			
+				<tr><td colspan="2" bgcolor = "purple"> PARTICIÓN 3 </td></tr>
+				<tr><td>part_status</td><td>9</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_type</td><td bgcolor = "#E0B0FF">0</td></tr>
+				<tr><td>part_fit</td><td>0</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_start</td><td bgcolor = "#E0B0FF">-1</td></tr>
+				<tr><td>part_size</td><td>-1</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_name</td><td bgcolor = "#E0B0FF">0</td></tr>
+			
+				<tr><td colspan="2" bgcolor = "purple"> PARTICIÓN 4 </td></tr>
+				<tr><td>part_status</td><td>9</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_type</td><td bgcolor = "#E0B0FF">0</td></tr>
+				<tr><td>part_fit</td><td>0</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_start</td><td bgcolor = "#E0B0FF">-1</td></tr>
+				<tr><td>part_size</td><td>-1</td></tr>
+				<tr><td bgcolor = "#E0B0FF">part_name</td><td bgcolor = "#E0B0FF">0</td></tr>
+			</table>>] }

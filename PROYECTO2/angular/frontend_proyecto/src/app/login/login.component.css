@@ -1,0 +1,72 @@
+/* Estilos para el contenedor de inicio de sesión */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #010409;
+
+}
+
+/* Estilos para los encabezados */
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas */
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Estilos para los textareas */
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Permite cambiar el tamaño vertical del textarea */
+    min-height: 60px; /* Altura mínima del textarea */
+    background-color: #0d1117;
+    color: white; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el botón de enviar */
+button {
+    width: 100%;
+    padding: 15px; /*Ajustar size del cuadrito*/
+    border: 3px solid;
+    background-color: #007bff;
+    border-radius: 5px;
+    border-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(255, 0, 0);
+    border: 1px solid darkred; 
+    border-radius: 5px; 
+    padding: 20px;
+    margin: 20px 0;
+}

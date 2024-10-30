@@ -1,0 +1,31 @@
+<!-- consola-logeada.component.html -->
+<html>
+
+<body>
+    <div class="container">
+        <h2>Sistema de Archivos</h2>
+
+        <div class="user-container">
+            <label>Usuario {{ nombre_usuario }}</label>
+            <button class="visualizador-btn" routerLink="/visualizador-discos">Sistema de Archivos</button>
+            <button class="logout-btn" (click)="logout()">Cerrar Sesión</button>
+        </div>
+
+        <textarea [(ngModel)]="commandInput" placeholder="Escribe tus comandos aquí..."></textarea>
+
+        <br>
+
+        <div class="buttons">
+            <button (click)="clearCommand()">Limpiar</button>
+            <button (click)="executeCommand()">Ejecutar Comando</button>
+            <input type="file" accept=".smia" (change)="loadFile($event)" />
+        </div>
+
+        <div class="output">
+            <h3>Salida:</h3>
+            <textarea readonly [value]="commandOutput"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
