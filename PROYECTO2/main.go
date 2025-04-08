@@ -48,8 +48,8 @@ func main() {
 	http.HandleFunc("/api/discos", withCORS(ObtenerDiscosHandler))    // Endpoint para el visualizador de discos
 	http.HandleFunc("/api/particiones", withCORS(ParticionesHandler)) // Endpoint para el visualizador de discos
 
-	fmt.Println("Servidor escuchando en http://localhost:8080")
-	err := http.ListenAndServe(":8080", nil) // Inicia el servidor
+	fmt.Println("Servidor escuchando en http://3.23.105.151:8080") //es un print, pero igual cambiar a localhost cuando se deje de trabajar con AWS para evitar confusion
+	err := http.ListenAndServe(":8080", nil)                       // Inicia el servidor
 	if err != nil {
 		fmt.Println("Error al iniciar el servidor:", err)
 	}

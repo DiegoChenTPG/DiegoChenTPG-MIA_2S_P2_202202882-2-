@@ -12,7 +12,7 @@ interface CommandResponse {
   providedIn: 'root'
 })
 export class CommandService {
-  private apiUrl = 'http://localhost:8080/api/execute';
+  private apiUrl = 'http://3.23.105.151:8080/api/execute';
   
   constructor(private http: HttpClient) {}
 

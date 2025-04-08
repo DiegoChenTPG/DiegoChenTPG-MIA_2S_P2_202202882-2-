@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:8080/api/login'; // Cambia la URL según tu API
+    private apiUrl = 'http://3.23.105.151:8080/api/login'; // Cambia la URL según tu API, regresar a localhost cuando se deje de trabajar con AWS y asi con las demas URL
     private loggedInUser: string = ""
 
     constructor(private http: HttpClient) { }
@@ -31,7 +31,7 @@ export class AuthService {
 
     // Método para cerrar sesión
     logout() {
-        return this.http.post('http://localhost:8080/api/logout', {}).subscribe(
+        return this.http.post('http://3.23.105.151:8080/api/logout', {}).subscribe( //regresar a localhost cuando se deje de trabajar con AWS
             () => {
                 this.loggedInUser = '';
                 localStorage.removeItem('loggedInUser'); // Limpiar el localStorage
@@ -42,11 +42,11 @@ export class AuthService {
     }
 
     obtenerDiscos(): Observable<string[]> {
-        return this.http.get<string[]>('http://localhost:8080/api/discos');
+        return this.http.get<string[]>('http://3.23.105.151:8080/api/discos'); //regresar a localhost cuando se deje de trabajar con AWS
     }
 
     obtenerParticiones(disco: string): Observable<string[]> {
-        return this.http.get<string[]>(`http://localhost:8080/api/particiones?disco=${disco}`);
+        return this.http.get<string[]>(`http://3.23.105.151:8080/api/particiones?disco=${disco}`); //regresar a localhost cuando se deje de trabajar con AWS
     }
 
 }
